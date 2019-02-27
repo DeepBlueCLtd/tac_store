@@ -12,7 +12,7 @@ num_of_replica=1
 fieldnames = ( "UKN","UKN","date-time","platform-name", "colour","ignore", "bearing","distance", "sensor-name","message")
 
 # elasticsearch credentials
-bonsai ='https://iz8vxm40qd:ol5yvzaoqk@tacstore-trials-8797636309.eu-central-1.bonsaisearch.net'
+bonsai ='<url>'
 auth = re.search('https\:\/\/(.*)\@', bonsai).group(1).split(':')
 host = bonsai.replace('https://%s:%s@' % (auth[0], auth[1]), '')
 # Instantiate the new Elasticsearch connection:
